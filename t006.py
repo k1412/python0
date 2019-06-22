@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 
-#Êä³öÖ¸¶¨¸öÊıµÄì³²¨ÄÇÆõÊıÁĞ
+#è¾“å‡ºæŒ‡å®šä¸ªæ•°çš„æ–æ³¢é‚£å¥‘æ•°åˆ—
 
 def fibGenerate(num):
     fib = 0
@@ -8,7 +8,8 @@ def fibGenerate(num):
         fib = 0
     if num == 2:
         fib = 1
-    fib = fibGenerate(num-1) + fibGenerate(num-2)
+    if num >= 3:
+        fib = fibGenerate(num-1) + fibGenerate(num-2)
     return fib
 
 def fib(num):
@@ -17,7 +18,7 @@ def fib(num):
         l.append(fibGenerate(i+1))
     return l
 
-number = int(raw_input("Ö¸¶¨ì³²¨ÄÇÆõÊıÁĞ¸öÊı£º"))
+number = int(raw_input("æŒ‡å®šæ–æ³¢é‚£å¥‘æ•°åˆ—ä¸ªæ•°ï¼š\n"))
 print fib(number)
 
 
