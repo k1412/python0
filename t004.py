@@ -1,5 +1,5 @@
 # -*-coding:utf-8 -*-
-#è¾“å…¥æŸå¹´æŸæœˆæŸæ—¥ï¼Œåˆ¤æ–­è¿™ä¸€å¤©æ˜¯è¿™ä¸€å¹´çš„ç¬¬å‡ å¤©ï¼Ÿ
+#ÊäÈëÄ³ÄêÄ³ÔÂÄ³ÈÕ£¬ÅĞ¶ÏÕâÒ»ÌìÊÇÕâÒ»ÄêµÄµÚ¼¸Ìì£¿
 
 daySum = 0
 year = int(raw_input("year:"))
@@ -9,6 +9,7 @@ day = int(raw_input("day:"))
 list31 = {1,3,5,7,8,10,12}
 list30 = {4,6,9,11}
 def isLeap(year):
+    '''ÅĞ¶ÏÄ³Ò»ÄêÊÇ·ñÎªÈòÄê£¬ÈòÄê·µ»Ø1Æ½Äê·µ»Ø0'''
     leap = 0
     if year % 4 ==0:
         if year % 100 ==0:
@@ -21,11 +22,7 @@ def isLeap(year):
     else:
         leap = 0
     return leap
-
-
-
-
-
+    
 for monthidx in range(1,month):
     if(monthidx in list31):
         daySum+=31
@@ -35,6 +32,7 @@ for monthidx in range(1,month):
         daySum = daySum + 27 + isLeap(year)
 daySum+=day
 
+print(isLeap.__doc__)
 
-print('è¿™æ˜¯ä¸€å¹´ä¸­çš„ç¬¬{}å¤©'.format(daySum))
+print('ÕâÊÇÒ»ÄêÖĞµÄµÚ{}Ìì'.format(daySum))
 
