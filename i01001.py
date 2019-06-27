@@ -1,4 +1,4 @@
 a = 2**2048
 print a
 
-print "????"
+print "这是中文"
