@@ -43,16 +43,13 @@ def merge(left,middle,right):  #归并发生在相邻的组之间
         l[left+j] = templ[j]
     return templ
 
-def mergelist(position):
-    length = len(l)
-    posLength = len(position) + 1
-    if posLength%2 != 0:
-        merge(position[-2],position[-1],length-1)
-        del position[-1]
-
-
-
-
-
-
-
+# def mergelist(position):
+#     length = len(l)
+#     posLength = len(position) + 1
+#     if posLength%2 != 0:
+#         merge(position[-2],position[-1],length-1)
+#         del position[-1]
+#         posLength = len(position) + 1
+#     while(len(position) != 1):
+#         for i in range(0,posLength-1,2):
+                                                                                          
