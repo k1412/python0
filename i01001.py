@@ -1,5 +1,6 @@
 from fractions import Fraction
 from decimal import Decimal
+import cmath
 a = 2**2048
 print a
 
@@ -15,3 +16,7 @@ dd = float(d)
 f = a * dd
 print c
 print dd
+f = cmath.sqrt(-2)
+print f
+x = 7358.0/3600.0
+print x
