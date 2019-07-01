@@ -18,3 +18,13 @@ boys = ['chris', 'arnold','bob']
 combine_list = [b+'+'+g for b in boys for g in girls if b[0] == g[0]]
 
 print combine_list
+
+#利用字典的键值对进行匹配的方法
+letter_girl = {}
+combine_list2 = []
+
+for girl in girls:
+    letter_girl.setdefault(girl[0],girl)
+
+combine_list2  = [b+"+"+letter_girl[b[0]] for b in boys]
+print combine_list2
