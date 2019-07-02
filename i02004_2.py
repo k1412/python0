@@ -9,6 +9,6 @@ else:
 for position in range(len(sample_2)):
     if sample_2[position] in "=:":
         name, value = sample_2[:position], sample_2[position:]       
-print('name=', name,
+print('name=', name,.
     'value=', value)
     
