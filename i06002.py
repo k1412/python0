@@ -14,3 +14,4 @@ s['middle'].setdefault('Lie',[]).append(my_sister)
 s['last'].setdefault('Hetland',[]).append(my_sister)
 print s
 print s['middle']['Lie']
+
