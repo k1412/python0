@@ -10,4 +10,4 @@ a.shape = (3,4,2)
 print "数组a: \n",a
 
 b = a.ravel()
-print "回复的数组a:\n",b
+print "回复的数组a:\n",b            
