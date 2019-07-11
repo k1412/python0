@@ -13,7 +13,7 @@ def NarraryMax(Narray):
         
 a = np.arange(0,12).reshape([3,4])
 print(a)
-b = np.apply_along_axis(NarraryMax, axis = 1, arr = a)
+b = np.apply_along_axis(NarraryMax, axis = 0, arr = a)
 print(b)
 
 
